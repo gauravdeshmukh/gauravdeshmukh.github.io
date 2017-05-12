@@ -4,9 +4,9 @@
 <h1>Why don't you go back to the previous tab?</h1>
 <script>
 	if (window.opener) {
-		//opener.location = 'http://gauravdeshmukh.github.io/';
+		opener.location = 'http://gauravdeshmukh.github.io/';
 		alert('Go back to your tab and check');
-		alert(opener.document.title);
+		//alert(opener.document.title);
 		// Just `opener.location.hash = '#hax'` only works on the same origin.
 	} else {
 		document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
